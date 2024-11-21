@@ -7,6 +7,16 @@
   top: 50%;
   transform: translateY(-50%);
 }
+.home-container {
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
 
 #container strong {
   font-size: 20px;
@@ -24,4 +34,28 @@
 
 #container a {
   text-decoration: none;
+}
+
+.image-container {
+  width: 100%;
+  height: 600px;
+  width: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+ion-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  position: absolute;
+  top: -100px;
+  animation: slideDown 1s ease-out forwards;
+}
+
+@keyframes slideDown {
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }

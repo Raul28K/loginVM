@@ -1,0 +1,93 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #f5f5f5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  ion-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #E8B374;
+    overflow: hidden;
+    
+    &::part(image) {
+      border-radius: 50%;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    
+    &:hover {
+      transform: scale(1.02);
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  h2 {
+    color: #2c3e50; /* Azul oscuro más profesional */
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: none; /* Eliminamos la sombra para un look más moderno */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  ion-item {
+    --background: #ffffff;
+    --color: #2c3e50;
+    --border-color: #e0e0e0;
+    --border-width: 1px;
+    --border-style: solid;
+    --border-radius: 8px;
+    --padding-start: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+
+    ion-label {
+      text-align: center;
+    }
+
+    ion-input {
+      text-align: center;
+    }
+
+    &:hover {
+      --background: #f8f9fa;
+      transition: all 0.3s ease;
+    }
+  }
+  
+  .login-button {
+    margin-top: 20px;
+    --background: #3498db; /* Azul vibrante */
+    --background-hover: #2980b9;
+    --box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .extra-options ion-button {
+    --color: #E8B374; /* Arena dorado */
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
